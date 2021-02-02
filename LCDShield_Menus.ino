@@ -333,3 +333,8 @@ void menuItem2() { // Function executes when you select the Green item from main
     }
   }
 }*/
+
+float getHumidityValue() {
+
+}
+}
