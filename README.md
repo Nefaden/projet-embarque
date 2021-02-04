@@ -25,12 +25,12 @@ L'objectif du projet était de permettre à une plante de s'auto-alimenter, à l
 ## Schéma
 
 Premier schéma conceptuel du projet
-[!schema][/Screenshots/schema-conceptuel.png]
+![schema](/Screenshots/schema-conceptuel.png)
 
 Modèles 3D du projet
-[!schema][/Screenshots/pot-assemble.png]
+![schema](/Screenshots/pot-assemble.png)
 
-[!schema][/Screenshots/pot-disemble.png]
+![schema](/Screenshots/pot-disemble.png)
 
 NB: Le pot le plus gros devait recevoir le système arduino, le second est la reserve d'eau et enfin le plus petit la plante. Dans le temps imparti et les moyens que nous avions ne nous ont pas permis d'avoir 3 pots, nous avons donc du contenir l'eau au plus bas, bloquer avec un fond au milieu afin de séparer l'eau de l'électronique
 
