@@ -1,6 +1,6 @@
-const int POMP_PIN = 7;
-const int MOIST_SENSOR_PIN = A0;
-const int LEVEL_SENSOR_PIN = A1;
+const int POMP_PIN = 3;
+const int MOIST_SENSOR_PIN = A5;
+const int LEVEL_SENSOR_PIN = A3;
 float sensorValue = 0;
 int minimumMoist = 50;
 bool isTankEmpty = false;
@@ -84,19 +84,18 @@ void loop() {
 	operateMainMenu();
 	// #####
   
-  if (isWateringNeeded()) {
-    Serial.println("Need watering");
-    letsPump();
-  }
+  //if (isWateringNeeded()) {
+    //Serial.println("Need watering");
+    //letsPump();
+  //}
+  //if (isRefillNeeded()) {
+    //Serial.println("Need tank refill");
+    //isTankEmpty = true;
+  //}
 
-  if (isRefillNeeded()) {
-    Serial.println("Need tank refill");
-    isTankEmpty = true;
-  }
+  Serial.println("Coucou");
 
-  Serial.println("Hugo suck dicks");
-
-  delay(5000);
+  delay(3000);
 }
 
 bool isWateringNeeded() {
@@ -115,8 +114,11 @@ bool isWateringNeeded() {
 }
 
 void letsPump() {
+  if(isTankEmpty){
+    return void;
+  }
   digitalWrite(POMP_PIN, HIGH);   // turn on pump
-  delay(5000);                    // wait 5 sec
+  delay(2000);                    // wait 2 sec
   digitalWrite(POMP_PIN, LOW);    // turn off pump                               
 }
 
